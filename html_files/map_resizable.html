@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="//code.jquery.com/jquery-2.0.0.js"></script>
+    <style>
+
+        .airports {
+        fill: #036;
+        stroke: #6cb0e0;
+        stroke-width: 0.5px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        vector-effect: non-scaling-stroke;
+              }
+    </style>
+  </head>
+  <body bgcolor="MintCream">
+    <div id="map"></div>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+
+
+<div id="us_states"></div>
+
+<script type="text/javascript">
+(function() {
+
+   var m_width = $("#us_states").width(),
+        width = 1200,
+        height = 600,
+        country,
+        state;
+
+    var projection = d3.geo.albersUsa()
+    .scale(1300)
+    .translate([width / 2, height / 2])
+    .precision(.1);
+
+var path = d3.geo.path()
+    .projection(projection);
+
+
+
+     var svg = d3.select("#us_states").append("svg")
+        .attr("preserveAspectRatio", "xMidYMid")
+        .attr("viewBox", "0 0 " + width + " " + height)
+        .attr("width", m_width)
+        .attr("height", m_width * height / width);
+
+
+ d3.json("us.json", function(error, us) {
+  if (error) return console.error(error);
+  console.log(us);
+
+  svg.selectAll("path")
+      .data(topojson.feature(us, us.objects.states).features)
+      .enter()
+      .append("path")
+      .attr("d", path)
+      .attr("fill", "LightGray")
+      .attr("stroke", "White")
+      .on("mouseover", function(d) {
+          d3.select(this).style("fill", "Cyan");
+          })                  
+      .on("mouseout", function(d) {
+           d3.select(this).style("fill", "LightGray");
+          });
+      //.on("mouseover", function(d) { d3.select(this).style("fill", "white");})
+
+});
+
+
+
+
+$(window).resize(function() {
+      var w = $("#us_states").width();
+      svg.attr("width", w);
+      svg.attr("height", w * height / width);
+    });
+
+})();
+</script>
+</body>
+</html>
