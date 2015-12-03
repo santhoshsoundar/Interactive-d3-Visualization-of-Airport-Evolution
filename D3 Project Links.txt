@@ -1,0 +1,51 @@
+D3 Project Links
+
+Text animate:
+http://www.visualcinnamon.com/2015/09/placing-text-on-arcs.html
+
+
+Point Animate :
+http://bl.ocks.org/cloudshapes/5909708
+http://bl.ocks.org/mbostock/1705868
+http://bl.ocks.org/mbostock/1313857
+
+
+Project : 
+
+Path & Arcs:
+https://github.com/mbostock/d3/wiki/Geo-Paths
+http://bl.ocks.org/mhkeller/f41cceac3e7ed969eaeb
+http://ajamsessions.tumblr.com/post/89157994905/payday-nation-when-native-american-tribes-team-up
+http://vega.github.io/vega-tutorials/airports/
+
+Concept : 
+http://www.tnoda.com/flightanimation
+http://www.lucify.com/alcohol-article/
+http://www.nytimes.com/interactive/2015/11/24/upshot/thanksgiving-flight-patterns.html?rref=upshot&smid=tw-upshotnyt&smtyp=cur&_r=3
+http://cs.smith.edu/dftwiki/index.php/Visualizations:_Geographic/GIS
+
+Bar inspirations :
+http://www.kartograph.org/showcase/3d/
+http://bl.ocks.org/emeeks/4531633
+Bar Scaling and transition effects referred from Lynda Exercise 4.6
+
+Animations & Transitions:
+http://blog.visual.ly/creating-animations-and-transitions-with-d3-js/
+Scott Murray - a very neat source!
+http://alignedleft.com/projects/2014/easy-as-pi/   (working examples)
+http://chimera.labs.oreilly.com/books/1230000000345/index.html (book)
+Or
+http://alignedleft.com/work/d3-book/   (chk the online version)
+
+
+Sparkline:
+http://www.nytimes.com/interactive/2014/06/05/upshot/how-the-recession-reshaped-the-economy-in-255-charts.html
+
+Color Palette inspirations : 
+http://www.lucify.com/alcohol-article/ 
+http://codepen.io/ryanmcnz/pen/ivtmJ
+
+Time series data viz. samples:
+http://www.axismaps.com/blog/2014/10/geography-of-jobs-animated-mapping-with-d3/
+http://romsson.github.io/dragit/example/nations.html
+
